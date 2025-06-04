@@ -1,4 +1,4 @@
-% read all the czi files that are boken into different parts and save the
+% reads all the czi files that are broken into different parts and save the
 % data as a .mat file
 
 % run openFilesWithSamePrefix_savedata('C:\Users\sharv\OneDrive\Desktop\Cact frap czi codes for paper\part data');

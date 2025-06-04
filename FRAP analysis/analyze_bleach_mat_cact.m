@@ -3,7 +3,7 @@ function data = analyze_bleach_mat_cact(filename,genotype,filenum,data_ch,vararg
 %
 %function data = analyze_bleach(filename,yesplot)
 %
-% "filename": filename (incl path) to the lsm file that contains the
+% "filename": filename (incl path) to the .mat file that contains the
 %	bleaching time course.
 % "genotype": string containing the genotype of the embryo in question
 % "data_ch": the numerical tag for the channel where the bleaching data are

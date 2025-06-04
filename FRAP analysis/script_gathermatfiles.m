@@ -11,9 +11,12 @@ close all
 %Change as % required 
 
 basepth2 = 'C:\Users\sharv\OneDrive\Desktop\Cact frap czi codes for paper\mat files for data\';
-pths = readdir2(basepth2,'/');
 
-% Look into our list of folders and extract all czi files.
+[pths2,pthsshort2] = readdir2(basepth2,'/');
+
+pths = pths2; 
+
+% Look into our list of folders and extract all .mat files that were extrecetd from the .czi files.
 Filenames = cell(length(pths),1);
 Filenamesshort = cell(length(pths),1);
 for i = 1:length(pths)
@@ -49,7 +52,18 @@ for i = 1:nfiles
     pthsshort{i} = filename(kslash(end-2)+1:kslash(end)-1);
 end
 
+%
+% Preallocate
+%
+md = cell(nfiles,1);
+Side = cell(nfiles,1);
+NCR = cell(nfiles,1);
 
+
+% Export to Excel file and save as mat file
+headers = {'date','filename','Side','NCR','Keq','k_in','k_out','R^2'};
+A = [headers;pthsshort filenamesshort Side NCR NCR NCR NCR NCR];
+xlswrite('Bleaching_stats.xlsx',A,'m_only')
 
 % Save filenames as mat file
 save bleaching_filenames filenames pthsshort filenamesshort pths
