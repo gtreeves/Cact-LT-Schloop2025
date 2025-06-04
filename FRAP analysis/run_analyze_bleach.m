@@ -1,5 +1,5 @@
 function soln = run_analyze_bleach(filename,genotype,filenum,data_ch,varargin)
-%Runs "analyze_bleach" on each lsm file in dir given in "pth".
+%Runs "analyze_bleach" on each .mat file in dir given in "pth".
 %
 %function soln = run_analyze_bleach(filename,genotype,data_ch,varargin)
 %

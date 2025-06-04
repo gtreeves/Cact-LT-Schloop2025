@@ -75,11 +75,6 @@ Utility Functions
 
 Usage Instructions
 
-GTR: what is the point of steps 1-3?
-Step 1: gets a bunch of filenames from inside a user-given directory, but also loads images and gets metadata
-Step 2: gets a bunch of filenames from inside a user-given directory and saves them into a mat file
-Step 3:  Does the actual analysis from the mat file from Step 2 but apparently doesn't do anything with the info from Step 1
-
 1. Set the base path for image data in `openFilesWithSamePrefix_savedata.m` and run it to generate `.mat` files.
 2. Run `script_gathermatfiles.m` to process the files and compile metadata.
 3. Use `script_mats_analysis.m` to perform segmentation, intensity extraction, fitting, and visualization.

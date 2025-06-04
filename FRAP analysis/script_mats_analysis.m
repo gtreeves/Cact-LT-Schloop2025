@@ -14,7 +14,7 @@
 clear
 close all
 yesplot = false;
-load bleaching_filenames % after running "script_gatherbleachfiles"
+load bleaching_filenames % has the names of the matfiles after running "script_gatherbleachfiles"
 
 
 %
